@@ -1,0 +1,39 @@
+/* Website Logo Header CSS */
+.headerborder {
+    background-color: lightgray;
+    background-image: url(Network\ Header\ Background.jpeg);
+        width: 45%;
+        height: fit-content; 
+    height: fit-content; 
+    padding: 1%; 
+    width: 90%; 
+    margin: auto; 
+    text-align: center; 
+    font-family: monospace;
+}
+    .logoheader {
+        border-style: groove; 
+        white-space: nowrap; 
+        overflow-x: auto; 
+        object-position: center; 
+        text-align: center; 
+        padding: 2%;
+        vertical-align: middle;
+    }
+        
+        #headerimg {
+            height: 100px; 
+            width: 100px; 
+            display: inline-block; 
+            vertical-align: middle;
+        }
+                
+        #headertext {
+            display: inline-block; 
+            vertical-align: middle; 
+            padding: 2px;
+            color: white;
+        }
+
+/* Navigation bar CSS */
+
