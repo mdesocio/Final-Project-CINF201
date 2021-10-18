@@ -1,4 +1,7 @@
 /* Website Logo Header CSS */
+body {
+    background-image: url();
+}
 .headerborder {
     background-color: lightgray;
     background-image: url(Network\ Header\ Background.jpeg);
@@ -33,4 +36,70 @@
             color: white;
         }
 
-/* Navigation bar CSS */
+/* Navigation bar for Additional Articles */
+.bodycontainer {
+    background-color: lightgray;
+    height: 450px; 
+    padding: 1%; 
+    width: 90%; 
+    margin: auto; 
+    text-align: center; 
+    font-family: monospace;
+}
+    #sidearticles {
+        float: left;
+        width: 20%;
+        padding: 1%;
+        height: fit-content;
+        color: slategray;
+    }
+/* different body types for the size of the pages*/
+    #bodyarticles {
+        width: 70%;
+        height: fit-content;
+        color: black;
+        margin: auto;
+        float: right;
+        text-align: left;
+        padding: 2%;
+        line-height: 1.5;
+        background-color: white;
+    }
+    #bodyvideos {
+        width: 50%;
+        height: fit-content;
+        color: black;
+        margin: auto;
+        float: left;
+        text-align: center;
+        object-position: center;
+        padding: 2%;
+        line-height: 1.5;
+        background-color: white;
+    }
+    #bodypdfcontainer {
+        background-color: lightgray;
+        height: 1200px; 
+        padding: 1%; 
+        width: 90%; 
+        margin: auto; 
+        text-align: center; 
+        font-family: monospace;
+    }
+    
+    #bodypdf {
+        width: 70%;
+        height: 1100px;
+        color: black;
+        margin: auto;
+        float: right;
+        text-align: center;
+        object-position: center;
+        padding: 2%;
+        line-height: 1.5;
+        background-color: white;
+    }
+    #pdf {
+        height: 1000px;
+        width: 90%;
+    }

@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+
+
 <html>
     <head>
         <title>
-            Two Factor Auth with Authy
+            What is Yubikey?
         </title>
         <link rel="shortcut icon" type="image/svg" href="lockfavicon.svg"/>
         <link rel="stylesheet" type="text/css" href="bootstrap.min.css"/>
@@ -27,19 +29,18 @@
             </div>
         </div>
         <div id="headerborder">
-            <nav class="navbar navbar-default container-fluid">
-                <div class="container">
+            <nav class="navbar navbar-default container-fluid navbar-fixed-top">
+                <div class="container container-fluid">
                     <ul class="nav nav-tabs nav-justified">
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         
                         <li class="nav-item"><a class="nav-link" href="What is 2FA.html">What is Two Factor Authentication?</a></li>
                         
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="2FAAuthy.html">Using Authy for 2FA</a></li>
+                        <li class="nav-item"><a class="nav-link" href="2FAAuthy.html">Using Authy for 2FA</a></li>
                         
-                        <li class="nav-item"><a class="nav-link" href="2FAYubikey.html">Using A Fido/U2F Key for 2FA</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="2FAYubikey.html">Using A Fido/U2F Key for 2FA</a></li>
                         
                         <li class="nav-item"><a class="nav-link" href="HaveIBeenPwned.html">What is HaveIBeenPwned.com?</a></li>
-                        
                       </ul>
                 </div>
         </div>
@@ -81,17 +82,28 @@
                     </div>
                 </aside>
             </div>
-            <div id="bodyvideos">
-                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/mW-eKofcmwo?start=20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div id="bodyarticles">
+                <h1>What is Yubikey and How do I Use One?</h1>
+                <p>
+                Yubikey is a hardware usb key that is often used as a physical Two Factor Device for accessing accounts using FIDO or U2F technologies.
+                Users add these to their accounts like their Google Account, Microsoft Account, etc. These devices are far less recognized and used on accounts.
+                Often companies don't implement the ability to use these devices.  Slack, OVH, and many game developer companies also don't allow for the use of U2F or FIDO keys.
+                <br>
+                So how does one setup a security key.  Provided is the steps on how to deploy your new U2F Yubikey on your Google Account.
+                </p>
+                <ol>
+                    <li>Open your Google Account by going to <a href=https://myaccount.google.com>https://myaccount.google.com</a>.</li>
+                    <li>Navigate to "Security" on the left side.</li>
+                    <li>In the Security menu, go to the "Sign in to Google">"2-Step Verification"</li>
+                    <li>Turn on "2-Step Verification"</li>
+                    <li>Click on "Add a Security"</li>
+                    <li>Follow the prompts of Google</li>
+                </ol>
             </div>
-        </div>       
+        </div>
         <div class="headerborder">
             <p id="headertext"> &copy 2021 <a href="mailto:mike@desocios.com">Michael DeSocio</a></p>
         </div>
         
     </body>
 </html>
-
-
-
-
