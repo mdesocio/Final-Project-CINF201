@@ -65,7 +65,7 @@ body {
         float: right;
         text-align: left;
         padding: 2%;
-        line-height: 1.5;
+        line-height: 1.4;
         background-color: white;
         display: block;
     }
@@ -120,3 +120,35 @@ body {
         height: 1000px;
         width: 90%;
     }
+    .hibpbodycontainer {
+        background-color: lightgray;
+        height: 740px; 
+        padding: 1%; 
+        width: 90%; 
+        margin: auto; 
+        text-align: center; 
+        font-family: monospace;
+    }
+        #hibp {
+            width: 80%;
+            height: 700px;
+            color: black;
+            margin: auto;
+            float: right;
+            text-align: center;
+            padding: 2%;
+            line-height: 1.5;
+            background-color: white;
+        }
+        #hibpsidearticles {
+            float: left;
+            width: 20%;
+            padding: 1%;
+            height: 700px;
+            color: black;
+        }
+            th {border:2px solid rgb(177, 177, 177);text-align: center;padding: 1%;}
+            td {font-size: 10px; border:2px solid rgb(177, 177, 177);text-align: center;padding: 2px;}
+            tr:nth-child(odd)  {background-color: rgb(255, 255, 255);}
+            tr:nth-child(even) {background-color: rgb(214, 213, 213);}
+            table {width: 100%;}
