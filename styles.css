@@ -35,11 +35,14 @@ body {
             padding: 2px;
             color: white;
         }
+            #footera {
+            color: white;
+            }
 
 /* Navigation bar for Additional Articles */
 .bodycontainer {
     background-color: lightgray;
-    height: 450px; 
+    height: 540px; 
     padding: 1%; 
     width: 90%; 
     margin: auto; 
@@ -50,13 +53,13 @@ body {
         float: left;
         width: 20%;
         padding: 1%;
-        height: fit-content;
-        color: slategray;
+        height: 500;
+        color: black;
     }
 /* different body types for the size of the pages*/
     #bodyarticles {
-        width: 70%;
-        height: fit-content;
+        width: 80%;
+        height: 500px;
         color: black;
         margin: auto;
         float: right;
@@ -64,10 +67,11 @@ body {
         padding: 2%;
         line-height: 1.5;
         background-color: white;
+        display: block;
     }
-    #bodyvideos {
-        width: 50%;
-        height: fit-content;
+    #bodyvideos1 {
+        width: 35%;
+        height: 400px;
         color: black;
         margin: auto;
         float: left;
@@ -77,9 +81,22 @@ body {
         line-height: 1.5;
         background-color: white;
     }
+    #bodyvideos2 {
+        width: 45%;
+        height: 400px;
+        color: black;
+        margin: auto;
+        float: right;
+        text-align: center;
+        object-position: center;
+        padding: 2%;
+        line-height: 1.5;
+        background-color: white;
+    }
+
     #bodypdfcontainer {
         background-color: lightgray;
-        height: 1200px; 
+        height: 2290px; 
         padding: 1%; 
         width: 90%; 
         margin: auto; 
@@ -88,8 +105,8 @@ body {
     }
     
     #bodypdf {
-        width: 70%;
-        height: 1100px;
+        width: 78%;
+        height: 2250px;
         color: black;
         margin: auto;
         float: right;
