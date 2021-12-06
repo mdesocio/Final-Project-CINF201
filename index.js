@@ -1,3 +1,4 @@
+/* At the bottom of the page*/
 function CheckPWD() {
 
     var pwd = document.getElementById("pwd").value;
@@ -15,5 +16,20 @@ function CheckPWD() {
     }
     else if (pwd.match((/[!-/]/g)).length>1) {
         document.getElementById('statement').innerHTML="Great! You have "+pwd.match((/[!-/]/g)).length+" special characters. Good job! Keep adding them!"
+    }
+};
+/*no loc.  On Page Load*/
+function time() {
+    const d= new Date();
+    var x = d.getHours();
+
+    if (x>=0 && x<12){
+        document.getElementById('message').innerHTML="Good Morning"
+    }
+    else if (x>=12 && x<17){
+        document.getElementById('message').innerHTML="Good Afternoon"
+    }
+    else {
+        document.getElementById('message').innerHTML="Good Evening"
     }
 }
