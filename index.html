@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-
-
 <html>
     <head>
         <title>
@@ -42,7 +40,7 @@
                         
                         <li class="nav-item"><a class="nav-link" href="HaveIBeenPwned.html">What is HaveIBeenPwned.com?</a></li>
 
-                        <li class="nav-item"><a class="nav-link" href="https://www.mdesocio.com/#about">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link" href="https://www.mdesocio.com/#about" target="_blank">About Me</a></li>
                       </ul>
                 </div>
             </nav>
@@ -88,6 +86,42 @@
                     steps and extra motions that are deemed unnecessary, but this can also be caused by the lack of knowledge of how to deploy 2FA on their accounts.  My goal is
                     to help users understand how to make their digital lives secure.  On this page you will find articles, links to other sites, videos, and tutorials on What Two Factor Authentication is and why you would want to use it.
                 </p>
+                <p><i>Check your password's strength by typing it in below!</i></p>
+                Enter your password: <input type="text" id="pwd">
+                <button onclick="CheckPWD()">Check!</button>
+                <br>
+
+                <p id='characters'></p> 
+                <p id='uppertypes'></p> <p id='lowertypes'></p>
+                <p id='numtypes'></p>  <p id='spectypes'></p>
+                <p id='statement'></p>
+                <script>
+                    function CheckPWD() {
+
+                        var pwd = document.getElementById("pwd").value;
+                        var pwdSpecChar = pwd.match((/[!-/]/g)).length;
+
+                        document.getElementById("characters").innerHTML = "Your password is "+pwd.length+" characters long.";
+                        document.getElementById('uppertypes').innerHTML = "You have "+pwd.match(/[A-Z]/g).length+" upper characters.";
+                        document.getElementById('lowertypes').innerHTML = "You have "+pwd.match(/[a-z]/g).length+" lowercase characters.";
+                        document.getElementById('numtypes').innerHTML = "You have " +pwd.match(/[0-9]/g).length+ " numbers.";
+                        document.getElementById('spectypes').innerHTML = "You have "+pwdSpecChar+" special characters.";
+
+                        if (pwdSpecChar>0 && pwdSpecChar<=1) {
+                            document.getElementById('statement').innerHTML="Good! You have 1 special character.  You should include more!! Put them in replacement of similar looking letters."
+                        }
+                        else if (pwdSpecChar>1) {
+                            document.getElementById('statement').innerHTML="Good! You have "+pwdSpecChar+" special characters. Good job! Keep adding them!"
+                        }
+                        else {
+                            document.getElementById('statement').innerHTML="You should add special characters! Put them in replacement of similar looking letters."
+                        }
+                        
+                    
+                        
+                    }
+/* When I run the above function i get no output of the char count.  It will only print the else statements. */
+                </script>
             </div>
         </div>       
         
