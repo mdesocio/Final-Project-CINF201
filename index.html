@@ -97,33 +97,7 @@
                 <p id='numtypes'></p>  
                 <p id='spectypes'></p>
                 <p id='statement'></p>
-                <script>
-                    function CheckPWD() {
-
-                        var pwd = document.getElementById("pwd").value;
-                        
-                        if (pwd.match((/[!-/]/g)).length>0 && pwd.match((/[!-/]/g)).length<=1) {
-                            document.getElementById('statement').innerHTML="Good! You have 1 special character.  You should include more!! Put them in replacement of similar looking letters."
-                        }
-                        else if (pwd.match((/[!-/]/g)).length>1) {
-                            document.getElementById('statement').innerHTML="Good! You have "+pwd.match((/[!-/]/g)).length+" special characters. Good job! Keep adding them!"
-                        }
-                        else {
-                            document.getElementById('statement').innerHTML="You should add special characters! Put them in replacement of similar looking letters."
-                        }
-                        
-                        document.getElementById("characters").innerHTML = "Your password is "+pwd.length+" characters long.";
-                        document.getElementById('uppertypes').innerHTML = "You have "+pwd.match(/[A-Z]/g).length+" upper characters.";
-                        document.getElementById('lowertypes').innerHTML = "You have "+pwd.match(/[a-z]/g).length+" lowercase characters.";
-                        document.getElementById('numtypes').innerHTML = "You have " +pwd.match(/[0-9]/g).length+ " numbers.";
-                        document.getElementById('spectypes').innerHTML = "You have "+pwd.match((/[!-/]/g)).length+" special characters.";
-
-                        
-                        
-                    
-                        
-                    }
-/* When I run the above function i get no output of the char count.  It will only print the else statements. */
+                <script src="index.js">
                 </script>
             </div>
         </div>       
